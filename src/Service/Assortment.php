@@ -23,6 +23,10 @@ class Assortment
     public function getAssortmentData()
     {
         try {
+            if ($this->container->get('session')->get('_order')) {
+                return $this->container->get('session')->get('_order')->assortment;
+            }
+
             $orderData = $this->httpClient->executeHttpGetRequest(
                 $this->container->getParameter('assortment_api_getassortment_url')
             );

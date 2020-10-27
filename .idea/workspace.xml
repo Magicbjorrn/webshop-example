@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e9b5a1-e964-43ab-9e3d-ad56e2541da3" name="Default Changelist" comment="" />
+    <list default="true" id="01e9b5a1-e964-43ab-9e3d-ad56e2541da3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/Assortment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Assortment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/cart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/cart.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/home.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +24,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -126,6 +136,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1j8pkvVYaqFCHWEMXzjOIdvIyby" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -166,6 +177,7 @@
       <workItem from="1603195720534" duration="5847000" />
       <workItem from="1603347725496" duration="24396000" />
       <workItem from="1603783044290" duration="1794000" />
+      <workItem from="1603812618654" duration="798000" />
     </task>
     <servers />
   </component>
@@ -181,10 +193,10 @@
       <screen x="67" y="27" width="2493" height="1413" />
     </state>
     <state x="1044" y="299" width="518" height="867" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.2493.1413/2560.0.2560.1440@67.27.2493.1413" timestamp="1603353103655" />
-    <state x="1046" y="490" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603372371034">
+    <state x="1046" y="490" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603812917623">
       <screen x="67" y="27" width="2493" height="1413" />
     </state>
-    <state x="1046" y="490" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.2493.1413/2560.0.2560.1440@67.27.2493.1413" timestamp="1603372371034" />
+    <state x="1046" y="490" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.2493.1413/2560.0.2560.1440@67.27.2493.1413" timestamp="1603812917623" />
     <state x="932" y="452" width="753" height="561" key="NewPhpClassDialog" timestamp="1603348088711">
       <screen x="67" y="27" width="2493" height="1413" />
     </state>

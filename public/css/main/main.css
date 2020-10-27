@@ -223,3 +223,38 @@ a:hover {
 }
 
 /* END ASSORTMENT PAGE STYLING */
+
+/* START CART PAGE STYLING */
+
+.payment-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cart-assortment-item {
+    position: relative;
+    margin: 15px 0px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cart-assortment-item .item-image {
+    max-width: 100%
+}
+.cart-assortment-item .item-description {
+    font-size: 16px;
+    line-height: 16px;
+}
+.cart-assortment-item .price {
+    position: absolute;
+    right: 15px;
+    background-color: #1c7430;
+    color: #ffffff;
+    padding: 17.5px;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-size: 33px;
+}
+
+/* END CART PAGE STYLING */
