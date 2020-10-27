@@ -1,0 +1,24 @@
+.footer {
+    height: 100px;
+    width: 100%;
+    background: #363636;
+}
+
+.footer-links {
+	float: left;
+	padding: 43px 0px 43px 0px;
+}
+
+.footer-links li {
+	color: #ffffff;
+	padding-right: 15px;
+}
+
+.footer-links p {
+	color: #ffffff;
+	margin-bottom: 0px;
+}
+
+.seperator {
+	line-height: 1;
+}

@@ -1,0 +1,29 @@
+@-webkit-keyframes rotate {
+    0% { -webkit-transform:rotate(0); }
+    0% { -webkit-transform:rotate(-360deg); }
+}
+@-moz-keyframes rotate {
+    0% { -moz-transform:rotate(0); }
+    0% { -moz-transform:rotate(-360deg); }
+}
+@keyframes rotate {
+    0% { transform:rotate(0); }
+    0% { transform:rotate(-360deg); }
+}
+
+.spinner-container {
+}
+
+.spinner {
+    -moz-animation: rotate 1s linear infinite;
+    -webkit-animation: rotate 1s linear infinite;
+    animation: rotate 1s linear infinite;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px 0px 10px;
+    float: right;
+    background: url('../../img/load-spinner.png') 0px no-repeat;
+    background-size: 40px 40px;
+}

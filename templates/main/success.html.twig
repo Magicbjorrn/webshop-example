@@ -1,0 +1,15 @@
+{% extends '@DynalinqBuckaroo/Base/_layout.html.twig' %}
+
+{% block bodycontent %}
+<div class="container">
+    <div class="main-column">
+        <div class="section success">
+            <h1 class="relative okay-padding"><span class="icon icon-okay"></span>{{ 'thank you title' | trans }}</h1>
+            <p>{{ 'thank you body' | trans }}</p>
+        </div>
+    </div>
+</div>
+    <script>
+        let faviconurl = {{ faviconurl|json_encode|raw }};
+    </script>
+{% endblock %}

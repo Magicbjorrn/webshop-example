@@ -1,0 +1,55 @@
+.header {
+	height: 130px;
+	border-bottom: 1px solid #217134;
+}
+
+.header-top-bar {
+	height: 34px;
+	background: #217134;
+}
+
+.header-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.language-selector {
+	float: right;
+}
+
+.language-selector li {
+	color: #ffffff;
+	padding-left: 15px;
+}
+
+.language-selector li:last-child {
+    display: none;
+}
+
+.language-selector a {
+	color: #ffffff;
+    text-decoration: none;
+}
+
+.language-selector a.current,
+.language-selector a:hover {
+    text-decoration: underline;
+}
+
+.corporate-logo {
+	background: url('../../img/corporate_logo.png') 0px no-repeat;
+	background-size: 100%;
+	height: 100px;
+	width: 100px;
+	align-self: center;
+	justify-self: start;
+}
+
+.cart-logo {
+	background: url('../../img/cart_logo.png') 0px no-repeat;
+	background-size: 100%;
+	height: 60px;
+	width: 60px;
+	align-self: center;
+	justify-self: end;
+}

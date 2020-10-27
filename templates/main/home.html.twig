@@ -1,0 +1,31 @@
+{% extends 'base/_layout.html.twig' %}
+
+{% block bodycontent %}
+    <div class="container">
+        <div class="main-column">
+            <div class="section">
+                <div class="assortment">
+                    {% for item in attribute(assortment, locale) %}
+                        <div class="assortment-item">
+                            <img class="item-image" src="{{ item.img }}" />
+                            <div>
+                                <h1>{{ item.name }}</h1>
+                                <p class="item-description">{{ item.description }}</p>
+                            </div>
+                            <div>
+                                <h1 class="price">{{ item.price  }}</h1>
+                                <a class="btn btn-primary btn-buy" href="{{ path('add_to_cart', {'id': item.id}) }}">{{ 'buy' | trans }}</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts_extra %}
+    <script>
+        let locale = {{ locale }};
+    </script>
+{% endblock %}
+

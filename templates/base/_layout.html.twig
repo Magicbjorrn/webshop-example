@@ -1,0 +1,25 @@
+{% extends 'base/base.html.twig' %}
+{% block title %}{{ 'webpage title' | trans }}{% endblock %}
+{% block stylesheets %}
+	<link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet"/>
+	<link href="{{ asset('css/main/main.css') }}" rel="stylesheet"/>
+	<link href="{{ asset('css/main/header.css') }}" rel="stylesheet"/>
+	<link href="{{ asset('css/main/footer.css') }}" rel="stylesheet"/>
+	{% block stylesheets_extra %}{% endblock %}
+{% endblock %}
+{% block body %}
+<header class="header">
+    {% include 'shared/header.html.twig' %}
+</header>
+<div class="main-content">
+    {% block bodycontent %}{% endblock %}
+</div>
+<div class="footer">
+	{% include 'shared/footer.html.twig' %}
+</div>
+{% endblock %}
+{% block javascripts %}
+	<script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
+	<script src="{{ asset('js/main/main.js') }}" rel="text/javascripts" ></script>
+	{% block javascripts_extra %}{% endblock %}
+{% endblock %}

@@ -1,0 +1,22 @@
+<div class="header-top-bar">
+    <div class="container">
+        <div class="language-selector col-md-6">
+            <ul class="horizontal-list language-selector">
+                {% for locale in locales %}
+                    <li><a href="{{ url(app.request.attributes.get('_route'), app.request.get('_route_params')|merge({ '_locale': locale })) }}"
+                           class="{% if app.request.locale == locale %}current{% endif %}">
+                            <span>{{ locale | trans }}</span>
+                        </a>
+                    </li>
+                    <li>|</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="container header-container">
+        <div class="corporate-logo"></div>
+        <a class="cart-logo" href="{{ path('cart') }}"></a>
+    </div>
+</div>
