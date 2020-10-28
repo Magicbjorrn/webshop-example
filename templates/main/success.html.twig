@@ -1,4 +1,4 @@
-{% extends '@DynalinqBuckaroo/Base/_layout.html.twig' %}
+{% extends 'base/_layout.html.twig' %}
 
 {% block bodycontent %}
 <div class="container">
@@ -9,7 +9,4 @@
         </div>
     </div>
 </div>
-    <script>
-        let faviconurl = {{ faviconurl|json_encode|raw }};
-    </script>
 {% endblock %}

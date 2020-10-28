@@ -13,7 +13,9 @@ class PaymentController extends AbstractController
      */
     public function indexAction(Request $request)
     {
-        return $this->render('default/index.html.twig', [
+        $request->getSession()->clear();
+        
+        return $this->render('main/success.html.twig', [
             // Page variables
         ]);
     }

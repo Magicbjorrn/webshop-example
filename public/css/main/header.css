@@ -44,6 +44,11 @@
 	align-self: center;
 	justify-self: start;
 }
+.corporate-logo a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
 
 .cart-logo {
 	background: url('../../img/cart_logo.png') 0px no-repeat;

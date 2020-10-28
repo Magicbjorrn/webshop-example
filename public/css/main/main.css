@@ -80,15 +80,6 @@ a:hover {
 	text-decoration: none;
 }
 
-.icon {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: 25%
-}
-
 .section {
     border: 1px solid #217134;
     padding: 40px 30px 40px 30px;
@@ -125,13 +116,13 @@ a:hover {
 }
 
 .btn.btn-secondary {
-    background-color: #f89c2b;
+    background-color: #ffffff;
     opacity: 1;
 }
 .btn.btn-secondary:hover,
 .btn.btn-secondary:not(:disabled):not(.disabled).active,
 .btn.btn-secondary:not(:disabled):not(.disabled):active {
-    background-color: #b8731d;
+    background-color: #d4d4d4;
 }
 
 .btn.btn-danger {
@@ -184,16 +175,20 @@ a:hover {
     box-shadow: none;
 }
 
+.horizontal-separator {
+    border-top: 2px solid #cccccc;
+}
+
 /* START ASSORTMENT PAGE STYLING */
 
 .assortment {
     display: grid;
+    grid-row-gap: 30px;
 }
 
 .assortment-item {
     position: relative;
     border: 1px solid #333333;
-    margin: 15px 0px;
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -215,6 +210,7 @@ a:hover {
     width: fit-content;
     width: -moz-fit-content;
     font-size: 33px;
+    margin: 0;
 }
 .assortment-item .btn-buy {
     position: absolute;
@@ -224,37 +220,23 @@ a:hover {
 
 /* END ASSORTMENT PAGE STYLING */
 
-/* START CART PAGE STYLING */
+/* START SUCCESS PAGE STYLING */
 
-.payment-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.cart-assortment-item {
-    position: relative;
-    margin: 15px 0px;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.cart-assortment-item .item-image {
-    max-width: 100%
-}
-.cart-assortment-item .item-description {
-    font-size: 16px;
-    line-height: 16px;
-}
-.cart-assortment-item .price {
+.icon-okay {
+    background: url('../../img/icon_okay.png') no-repeat center center;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
     position: absolute;
-    right: 15px;
-    background-color: #1c7430;
-    color: #ffffff;
-    padding: 17.5px;
-    width: fit-content;
-    width: -moz-fit-content;
-    font-size: 33px;
+    left: 0;
 }
 
-/* END CART PAGE STYLING */
+.section.success {
+    background: #f3fdf1;
+}
+
+.okay-padding {
+    padding-left: 40px;
+}
+
+/* END SUCCESS PAGE STYLING */

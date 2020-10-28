@@ -1,23 +1,58 @@
 {% extends 'base/_layout.html.twig' %}
 
+{% block stylesheets_extra %}
+    <link href="{{ asset('css/main/cart.css') }}" rel="stylesheet"/>
+{% endblock %}
 {% block bodycontent %}
     <div class="container">
         <div class="main-column">
             <div class="section payment-section">
-                <div class="payment-methods">
-
-                </div>
-                <div class="assortment">
-                    {% for item in attribute(assortment, locale) %}
-                        <div class="cart-assortment-item">
-                            <img class="item-image" src="{{ item.img }}" />
-                            <div>
-                                <h1>{{ item.name }}</h1>
-                                <h1 class="price">{{ item.price  }}</h1>
+                {% if assortment %}
+                    <h1>{{ "payment methods" | trans }}</h1>
+                    <div class="payment-methods">
+                        <div class="btn btn-secondary btn-payment ideal" id="ideal_master"></div>
+                        <div class="btn btn-secondary btn-payment paypal"></div>
+                        <div class="btn btn-secondary btn-payment mastercard"></div>
+                        <div class="buttons-ideal" id="ideal_banks" style="display: none;">
+                            <div class="btn btn-secondary btn-payment ideal child rabo" id="ideal_rabo">
+                                <p class="ideal-bank-text">Rabobank</p>
+                                <span class="checked-icon"></span>
                             </div>
+                            <div class="btn btn-secondary btn-payment ideal child ing" id="ideal_ing">
+                                <p class="ideal-bank-text">ING</p>
+                                <span class="checked-icon"></span>
+                            </div>
+                            <div class="btn btn-secondary btn-payment ideal child asn" id="ideal_asn">
+                                <p class="ideal-bank-text">ASN Bank</p>
+                                <span class="checked-icon"></span>
+                            </div>
+                            <div class="btn btn-secondary btn-payment ideal child sns" id="ideal_sns">
+                                <p class="ideal-bank-text">SNS Bank</p>
+                                <span class="checked-icon"></span>
+                            </div>
+                            <div class="btn btn-secondary btn-payment ideal child knab" id="ideal_knab">
+                                <p class="ideal-bank-text">Knab</p>
+                                <span class="checked-icon"></span>
+                            </div>
+                            <button class="btn btn-primary btn-pay" id="btn-pay" style="display: none;"><a href="{{ path('payment') }}">{{ 'pay' | trans }}</a></button>
                         </div>
-                    {% endfor %}
-                </div>
+                    </div>
+                    <div class="assortment">
+                        {% for item in assortment %}
+                            <div class="cart-assortment-item">
+                                <img class="item-image" src="{{ item.item.img }}"/>
+                                <div>
+                                    <h1><span class="item-count">{{ item.count }}x </span>{{ item.item.name }}</h1>
+                                    <h1 class="price">{{ item.item.price }}</h1>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="horizontal-separator"></div>
+                        <h1>{{ 'total' | trans }}: €{{ totalprice }}</h1>
+                    </div>
+                {% else %}
+                    <h1>{{ 'no items in cart' | trans }}</h1>
+                {% endif %}
             </div>
         </div>
     </div>

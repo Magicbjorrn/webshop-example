@@ -1,0 +1,117 @@
+.mastercard {
+    background: url('../../img/payment/buckaroo_master.png') no-repeat center center;
+}
+.ideal {
+    background: url('../../img/payment/buckaroo_ideal.png') no-repeat center center;
+}
+.paypal {
+    background: url('../../img/payment/buckaroo_paypal.png') no-repeat center center;
+}
+
+.asn {
+    background: url('../../img/payment/logo_asn.png') no-repeat center center;
+}
+.ing {
+    background: url('../../img/payment/logo_ing.png') no-repeat center center;
+}
+.knab {
+    background: url('../../img/payment/logo_knab.png') no-repeat center center;
+}
+.rabo {
+    background: url('../../img/payment/logo_rabo.png') no-repeat center center;
+}
+.sns {
+    background: url('../../img/payment/logo_sns.png') no-repeat center center;
+}
+
+.payment-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-row: 1fr 1fr;
+}
+.payment-section > h1 {
+    font-size: 32px;
+}
+
+.cart-assortment-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cart-assortment-item .item-image {
+    max-height: 111px;
+    max-width: 150px;
+    justify-self: center;
+}
+.item-count {
+    font-size: 16px;
+}
+.cart-assortment-item .price {
+    background-color: #1c7430;
+    color: #ffffff;
+    padding: 12px;
+    margin: 0;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.payment-methods {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.assortment {
+    grid-row-start: 2;
+}
+
+.btn-payment {
+    background-origin: content-box;
+    background-size: contain;
+    height: 150px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+.btn-payment.ideal.checked {
+    margin-bottom: 40px;
+}
+
+.payment-checked {
+    border: 2px solid #5caa9e;
+}
+
+.payment-checked .checked-icon {
+    display: block;
+}
+
+.buttons-ideal {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    border-top: 1px solid #cccccc;
+    padding-top: 30px;
+}
+
+.btn-pay {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    padding: 0;
+}
+
+.btn-pay a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0px 15px;
+}
